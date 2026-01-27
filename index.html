@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- Load Tailwind CSS for the forth-sec -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- bootsrap (kept for layout consistency) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- text -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+    <div class="navbar-wrapper py-3 d-flex justify-content-center">
+        <nav class="navbar-box">
+            <!-- LEFT MENU ICON (only mobile) -->
+            <button class="menu-toggle d-lg-none" id="menuBtn">☰</button>
+            <!-- LOGO -->
+            <div class="logo">
+                <img src="images/logo-voyegers.jpeg" alt="Voyegers Logo">
+            </div>
+
+            <!-- DESKTOP NAV LINKS -->
+            <ul class="nav-links d-none d-lg-flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="packages.html">Help</a></li>
+                <li><a href="gallery.html">countries</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <!-- MOBILE SMALL BUTTON -->
+            
+        </nav>
+    </div>
+    <!-- MOBILE DROPDOWN -->
+    <div class="mobile-menu d-lg-none" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="cab-booking.html">Book a Cab</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+    </div>
+</header>
+
+<!-- hero  -->
+
+<section class="hero">
+    <div class="slides">
+        <div class="slide active" style="background-image:url('images/How-to-Become-a-Cruise-Ship-Captain.jpg')"></div>
+        <div class="slide" style="background-image:url('images/hero-image-1.avif')"></div>
+        <div class="slide" style="background-image:url('images/Image-38.jpeg')"></div>
+    </div>
+
+    <div class="hero-content">
+
+        <h1 class="hero-quote">
+            Stay connected wherever the world takes you
+        </h1>
+
+        <p class="hero-sub">
+            Book international SIM cards in seconds. No roaming stress.
+        </p>
+
+        <div class="hero-search">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search destinations">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- pick a destionation  -->
+
+<section class="countries">
+    <h2>Choose your next connection</h2>
+    <p class="countries-sub">Affordable international SIMs for every journey</p>
+
+    <div class="country-grid">
+
+        <a href="country-details.html"><div class="country-card">
+            <img src="images/italy.jpg">
+            <div class="country-info">
+                <span>Italy </span>
+                <small>Starting from $4.50</small>
+            </div>
+        </div>
+    </a>
+
+        <div class="country-card">
+            <img src="images/france.jpg">
+            <div class="country-info">
+                <span>France</span>
+                <small>Starting from $4.50</small>
+            </div>
+        </div>
+
+        <div class="country-card">
+            <img src="images/japan.jpg">
+            <div class="country-info">
+                <span>Japan</span>
+                <small>Starting from $4.50</small>
+            </div>
+        </div>
+
+        <div class="country-card">
+            <img src="images/australia.jpg">
+            <div class="country-info">
+                <span>Australia</span>
+                <small>Starting from $4.00</small>
+            </div>
+        </div>
+        <div class="country-card">
+            <img src="images/italy.jpg">
+            <div class="country-info">
+                <span>Italy </span>
+                <small>Starting from $4.50</small>
+            </div>
+        </div>
+
+        <div class="country-card">
+            <img src="images/france.jpg">
+            <div class="country-info">
+                <span>France</span>
+                <small>Starting from $4.50</small>
+            </div>
+        </div>
+
+        <div class="country-card">
+            <img src="images/japan.jpg">
+            <div class="country-info">
+                <span>Japan</span>
+                <small>Starting from $4.50</small>
+            </div>
+        </div>
+
+        <div class="country-card">
+            <img src="images/australia.jpg">
+            <div class="country-info">
+                <span>Australia</span>
+                <small>Starting from $4.00</small>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="view-all">Explore all destinations</button>
+</section>
+
+<!-- about us  -->
+
+<section class="aboutus">
+   <div class="about-title">
+
+    <div class="about-title-row">
+        <img src="images/logo-voyegers.jpeg" alt="Voyegers Logo">
+        <h2>Voyager eSIM for short, smart journeys</h2>
+    </div>
+
+    <p>Designed for travelers who move across borders in days, not months.</p>
+
+</div>
+
+
+    <div class="about-cards">
+
+        <div class="about-card">
+            <img src="images/abutusimg1.png">
+            <div class="about-box">
+                <span>Instant Setup</span>
+                <p>Scan once. Connect worldwide in seconds.</p>
+            </div>
+        </div>
+
+        <div class="about-card">
+            <img src="images/abutusimg2.png">
+            <div class="about-box">
+                <span>Short-trip plans</span>
+                <p>Perfect data packs for 1–7 day journeys.</p>
+            </div>
+        </div>
+
+        <div class="about-card">
+            <img src="images/abutusimg3.png">
+            <div class="about-box">
+                <span>Human support</span>
+                <p>Real people helping you anytime, anywhere.</p>
+            </div>
+        </div>
+        <div class="about-card">
+            <img src="images/abutusimg1.png">
+            <div class="about-box">
+                <span>Instant Setup</span>
+                <p>Scan once. Connect worldwide in seconds.</p>
+            </div>
+        </div>
+
+        <div class="about-card">
+            <img src="images/abutusimg2.png">
+            <div class="about-box">
+                <span>Short-trip plans</span>
+                <p>Perfect data packs for 1–7 day journeys.</p>
+            </div>
+        </div>
+
+        <div class="about-card">
+            <img src="images/abutusimg3.png">
+            <div class="about-box">
+                <span>Human support</span>
+                <p>Real people helping you anytime, anywhere.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="imgsec">
+
+    <div class="imgsec-left">
+        <h2>Every journey begins with connection</h2>
+        <p>
+            Whether crossing oceans or borders, Voyager eSIM keeps you
+            reachable — without changing who you are or where you're going.
+        </p>
+
+        <div class="imgsec-line"></div>
+
+        <span class="imgsec-tag">Built for modern voyagers</span>
+    </div>
+
+    <div class="imgsec-right">
+        <img src="images/seafarer.webp" alt="">
+    </div>
+
+</section>
+
+<!-- testimonials  -->
+
+<section class="testimonials">
+
+<h2>What voyagers say</h2>
+
+<div class="testimonial-wrapper">
+  <div class="testimonial-track">
+
+    <div class="testimonial-card">
+      <div class="profile">R</div>
+      <p>“Voyager eSIM saved my Tokyo trip.”</p>
+      <span>Rahul · India</span>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="profile">E</div>
+      <p>“Instant connection after landing.”</p>
+      <span>Emma · UK</span>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="profile">D</div>
+      <p>“jbnkilj h;kjsdn iudhf g”</p>
+      <span>Daniel · Germany</span>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="profile">A</div>
+      <p>“No roaming stress anymore.”</p>
+      <span>Aisha · UAE</span>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="profile">M</div>
+      <p>“Setup took less than a minute.”</p>
+      <span>Mark · Canada</span>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="profile">S</div>
+      <p>“Clean and reliable service.”</p>
+      <span>Sofia · Spain</span>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+<section class="contactus">
+
+  <div class="contact-wrapper">
+
+    <div class="contact-left">
+      <h2>Let’s talk</h2>
+      <p>
+        Whether it’s a short trip or a sudden plan, Voyager eSIM is ready to help you stay connected.
+        Reach us anytime.
+      </p>
+
+      <div class="contact-info">
+        <span>support@voyageresim.com</span>
+        <span>+91 98765 43210</span>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <form>
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Your email" required>
+        <textarea placeholder="Your message"></textarea>
+        <button type="submit">Send message</button>
+      </form>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+<footer class="main-footer">
+    
+
+    <div class="footer-bottom">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo-voyegers.jpeg" alt="Voyegers Logo">
+            </div>
+
+
+            <div class="footer-links-social">
+                <nav class="footer-nav">
+                    <a href="#">About US</a>
+                    <span class="pipe">|</span>
+                    <a href="#">Tour packages</a>
+                    <span class="pipe">|</span>
+                    <a href="#">Tour packages</a>
+                    <span class="pipe">|</span>
+                    <a href="#">Contact Us</a>
+                </nav>
+
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook" aria-label="Facebook">F</a>
+                    <a href="#" class="social-icon twitter" aria-label="Twitter">t</a>
+                    <a href="#" class="social-icon linkedin" aria-label="LinkedIn">in</a>
+                    <a href="#" class="social-icon instagram" aria-label="Instagram">o</a>
+                </div>
+            </div>
+
+            <hr class="footer-separator">
+
+            <div class="footer-copyright-policy">
+                <p class="copyright-text">Travelling! Copyright © 2025. All Rights Reserved.</p>
+                <a href="#" class="privacy-policy">privacy policy</a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+
+</section>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Your Custom JS -->
+<script src="index.js"></script>
+
+    
+</body>
+</html>

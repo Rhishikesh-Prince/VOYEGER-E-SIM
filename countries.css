@@ -1,0 +1,65 @@
+.countries{
+  padding:90px 8%;
+  background:#fff;
+}
+
+/* Header */
+.countries-header h2{
+  font-size:52px;
+  margin-bottom:30px;
+  font-weight:700;
+}
+
+/* Search */
+.country-search{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  background:#f7f9fc;
+  padding:18px 22px;
+  border-radius:18px;
+  max-width:900px;
+  margin-bottom:35px;
+}
+
+.country-search input{
+  border:none;
+  outline:none;
+  background:transparent;
+  width:100%;
+  font-size:16px;
+}
+
+.search-icon{
+  font-size:18px;
+  opacity:0.6;
+}
+
+/* Filters */
+.country-filters{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.filter-btn{
+  padding:12px 22px;
+  border-radius:30px;
+  border:1.5px solid #dbe3ff;
+  background:white;
+  color:#3b5bff;
+  font-size:14px;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+
+.filter-btn:hover{
+  background:#f0f4ff;
+}
+
+.filter-btn.active{
+  background:#1e3fdc;
+  color:white;
+  border-color:#1e3fdc;
+  box-shadow:0 8px 20px rgba(30,63,220,0.25);
+}
