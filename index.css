@@ -231,8 +231,8 @@ body, html {
     backdrop-filter: blur(10px);
     border-radius: 18px;
     padding: 18px 22px;
-    width: 420px;
-    max-width: 100%;
+    width: 920px;
+    /* max-width: 100%; */
 }
 
 .hero-search input {
@@ -473,7 +473,7 @@ body, html {
 
 .about-box {
     position: absolute;
-    top: 24px;
+    bottom: 24px;
     left: 24px;
     right: 24px;
     
@@ -630,7 +630,7 @@ body, html {
 
 .testimonial-track{
   display:flex;
-  gap:30px;
+  gap:45px;
   transition:transform 0.8s ease;
   width: 100%;
 }

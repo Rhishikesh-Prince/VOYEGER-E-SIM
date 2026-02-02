@@ -17,35 +17,45 @@ setInterval(() => {
 }, 3000);
 
 
+// testimonials slider (fixed for mobile / tablet / desktop)
 
-// testiu8monials 
 const track = document.querySelector(".testimonial-track");
 const cards = document.querySelectorAll(".testimonial-card");
 
-let slidePos = 0;
+let index1 = 0;
+const GAP = 45; // must match CSS gap
 
-function getVisibleCount(){
-  if(window.innerWidth <= 600) return 1;
-  if(window.innerWidth <= 900) return 2;
+function getVisibleCount() {
+  if (window.innerWidth <= 600) return 1;
+  if (window.innerWidth <= 900) return 2;
   return 3;
 }
 
-setInterval(()=>{
-  const visible = getVisibleCount();
-  slidePos += visible;
+function slideTestimonials() {
+  if (!cards.length) return;
 
-  if(slidePos >= cards.length){
-    slidePos = 0;
+  const visible = getVisibleCount();
+  const cardWidth = cards[0].getBoundingClientRect().width + GAP;
+  const maxIndex = cards.length - visible;
+
+  index++;
+
+  if (index > maxIndex) {
+    index = 0;
   }
 
-  track.style.transform = `translateX(-${slidePos * (100/visible)}%)`;
+  track.style.transform = `translateX(-${index * cardWidth}px)`;
+}
 
-},3000);
+// auto slide
+setInterval(slideTestimonials, 3000);
 
-window.addEventListener("resize",()=>{
-  slidePos = 0;
-  track.style.transform = `translateX(0%)`;
+// reset on resize
+window.addEventListener("resize", () => {
+  index = 0;
+  track.style.transform = "translateX(0px)";
 });
+
 
 
 // countries .js 
