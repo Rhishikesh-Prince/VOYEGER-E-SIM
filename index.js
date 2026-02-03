@@ -58,4 +58,21 @@ window.addEventListener("resize", () => {
 
 
 
-// countries .js 
+// hoqw to wqorek 
+
+// HOW IT WORKS IMAGE SWITCH
+const steps = document.querySelectorAll(".how-step");
+const howImg = document.getElementById("howImg");
+
+steps.forEach(step=>{
+  step.addEventListener("mouseenter", ()=>{
+    steps.forEach(s=>s.classList.remove("active"));
+    step.classList.add("active");
+
+    howImg.style.opacity = 0;
+    setTimeout(()=>{
+      howImg.src = step.dataset.img;
+      howImg.style.opacity = 1;
+    },200);
+  });
+});
